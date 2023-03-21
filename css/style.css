@@ -1,0 +1,381 @@
+@import url("https://fonts.googleapis.com/css2?family=Nunito:wght@200;300;400;500;600;700;800;900;1000&display=swap");
+@font-face {
+  font-family: "Izhitsa";
+  font-weight: 400;
+  font-style: normal;
+  src: url("../fonts/Izhitsa/Izhitsa-Cyrillic.eot");
+  src: url("../fonts/Izhitsa/Izhitsa-Cyrillic.eot?#iefix") format("embedded-opentype"), url("../fonts/Izhitsa/Izhitsa-Cyrillic.woff") format("woff"), url("../fonts/Izhitsa/Izhitsa-Cyrillic.ttf") format("truetype");
+}
+* {
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+*:before, *:after {
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box;
+}
+
+html, body, div, span, applet, object, iframe, h1, h2, h3, h4, h5, h6, p, blockquote, pre, a, abbr, acronym, address, big, cite, code, del, dfn, em, img, ins, kbd, q, s, samp, small, strike, strong, sub, sup, tt, var, b, u, i, center, dl, dt, dd, ol, ul, li, fieldset, form, label, legend, table, caption, tbody, tfoot, thead, tr, th, td, article, aside, canvas, details, embed, figure, figcaption, footer, header, hgroup, menu, nav, output, ruby, section, summary, time, mark, audio, video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-size: 100%;
+  font: inherit;
+  vertical-align: baseline;
+}
+
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure, footer, header, hgroup, menu, nav, section {
+  display: block;
+}
+
+blockquote, q {
+  quotes: none;
+}
+
+blockquote:before, blockquote:after, q:before, q:after {
+  content: "";
+  content: none;
+}
+
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+
+body {
+  font-size: 16px;
+  min-width: 320px;
+  position: relative;
+  line-height: normal;
+  font-family: "Nunito", sans-serif;
+  font-weight: normal;
+  background: #F0E5D5;
+  color: #000;
+}
+
+html, body {
+  overflow-x: hidden;
+}
+
+img {
+  display: block;
+  max-width: 100%;
+  height: auto;
+}
+
+.text-center {
+  text-align: center;
+}
+
+a {
+  display: block;
+  text-decoration: none;
+  -webkit-transition: 0.3s ease;
+  transition: 0.3s ease;
+  outline: none;
+  width: -webkit-fit-content;
+  width: -moz-fit-content;
+  width: fit-content;
+}
+a:hover, a:focus {
+  text-decoration: none;
+}
+
+input, textarea, select {
+  outline: none;
+  -webkit-box-shadow: none;
+          box-shadow: none;
+  -webkit-appearance: none;
+     -moz-appearance: none;
+          appearance: none;
+  padding: 0 15px;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  font-family: "Nunito", sans-serif;
+  border: none;
+  border-radius: 10px;
+  width: 100%;
+  height: 54px;
+  background: transparent;
+  color: #000;
+  font-size: 15px;
+}
+input::-webkit-input-placeholder, textarea::-webkit-input-placeholder, select::-webkit-input-placeholder {
+  color: #595959;
+}
+input::-moz-placeholder, textarea::-moz-placeholder, select::-moz-placeholder {
+  color: #595959;
+}
+input:-ms-input-placeholder, textarea:-ms-input-placeholder, select:-ms-input-placeholder {
+  color: #595959;
+}
+input::-ms-input-placeholder, textarea::-ms-input-placeholder, select::-ms-input-placeholder {
+  color: #595959;
+}
+input::placeholder, textarea::placeholder, select::placeholder {
+  color: #595959;
+}
+input:hover, input:focus, textarea:hover, textarea:focus, select:hover, select:focus {
+  outline: none;
+  -webkit-box-shadow: none;
+          box-shadow: none;
+}
+
+label {
+  display: block;
+  width: 100%;
+  margin: 0 0 13px;
+}
+label:last-child {
+  margin: 0;
+}
+
+textarea {
+  resize: none;
+  padding: 12px 17px;
+  height: 103px;
+}
+
+button, .btn {
+  outline: none;
+  -webkit-transition: 0.3s ease;
+  transition: 0.3s ease;
+  cursor: pointer;
+  -webkit-box-shadow: none;
+          box-shadow: none;
+  font-family: "Nunito", sans-serif;
+  padding: 0;
+  margin: 0;
+  border: none;
+  border-radius: 0;
+}
+button:hover, button:focus, .btn:hover, .btn:focus {
+  outline: none;
+  -webkit-box-shadow: none;
+          box-shadow: none;
+}
+
+.btn {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  text-align: center;
+  padding: 15px 25px;
+  font-size: 20px;
+  font-weight: normal;
+  line-height: 27px;
+  border-radius: 25px;
+  -webkit-transition: 0.3s ease;
+  transition: 0.3s ease;
+}
+
+.btn-accent {
+  background: #DD2A1B;
+  color: #fff;
+}
+.btn-accent:hover {
+  background: #0368B0;
+  color: #fff;
+}
+
+.btn-blue {
+  background: #0368B0;
+  color: #fff;
+}
+.btn-blue:hover {
+  background: #DD2A1B;
+  color: #fff;
+}
+
+.btn-border-accent {
+  padding: 15px 25px;
+  border: 1px solid #DD2A1B;
+  border-radius: 25px;
+  font-size: 20px;
+  color: #fff;
+  padding: 14px 25px;
+}
+.btn-border-accent:hover {
+  background: #DD2A1B;
+  color: #fff;
+}
+
+.svg-icon {
+  display: inline-block;
+  width: 100%;
+  height: 100%;
+}
+
+strong, b {
+  font-weight: bold;
+  display: inline-block;
+}
+
+ul, ol {
+  padding: 0 0 0 20px;
+}
+
+.my-ul {
+  list-style: none;
+  padding: 0;
+}
+
+.list-dots {
+  list-style-type: disc;
+}
+
+h1, h2 {
+  width: 100%;
+  font-family: "Izhitsa", sans-serif;
+  font-size: 64px;
+  text-transform: uppercase;
+  line-height: 64px;
+}
+
+h2 {
+  color: #DD2A1B;
+}
+
+.container {
+  max-width: 1730px;
+  padding: 0 15px;
+}
+
+.row {
+  margin: 0 -15px;
+}
+.row > * {
+  padding: 0 15px;
+}
+
+.slick-slider {
+  width: 100%;
+}
+
+.slick-slide {
+  outline: none;
+}
+
+.slider-nav {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: end;
+      -ms-flex-pack: end;
+          justify-content: flex-end;
+}
+.slider-nav .slick-arrow {
+  border: 1px solid #00A658;
+  fill: #00A658;
+  width: 48px;
+  height: 48px;
+  position: relative;
+  top: 0;
+  -webkit-transform: none;
+          transform: none;
+  left: 0;
+  right: 0;
+  background: transparent;
+}
+.slider-nav .slick-arrow svg {
+  width: 10px;
+  height: 14px;
+}
+.slider-nav .slick-arrow:hover {
+  background: #00A658;
+  fill: #fff;
+}
+.slider-nav .slick-prev {
+  margin: 0 26px 0 0;
+}
+
+.slick-arrow {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  border: none;
+  border-radius: 50%;
+  z-index: 1;
+  opacity: 1;
+  width: 94px;
+  height: 94px;
+  background: #00A658;
+  position: absolute;
+  top: 50%;
+  -webkit-transform: translate(0, -50%);
+          transform: translate(0, -50%);
+  border-radius: 50%;
+  fill: #fff;
+}
+.slick-arrow svg {
+  width: 20px;
+  height: 28px;
+}
+.slick-arrow:hover {
+  background: #DD2A1B;
+}
+.slick-arrow.slick-disabled {
+  opacity: 0;
+}
+
+.slick-prev {
+  left: -45px;
+}
+
+.slick-next {
+  right: -45px;
+}
+
+.slick-dots {
+  position: absolute;
+  z-index: 1;
+  list-style: none;
+  padding: 0;
+  bottom: 11px;
+  width: 100%;
+  left: 0;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+.slick-dots li {
+  cursor: pointer;
+  border-radius: 50%;
+  margin: 0 8px 0 0;
+  width: 12px;
+  height: 12px;
+  border: 1px solid #fff;
+}
+.slick-dots li:last-child {
+  margin: 0;
+}
+.slick-dots li.slick-active {
+  background: #fff;
+}
+.slick-dots li button {
+  display: none;
+}
