@@ -71,19 +71,19 @@ input, textarea, select
 	outline: none
 	box-shadow: none
 	appearance: none
-	padding: 0 15px
+	padding: 0 21px
 	box-sizing: border-box
 	font-family: $default-font
-	border: none
-	border-radius: 10px
+	border: 1px solid #DD2A1B
+	border-radius: 25px
 	width: 100%
-	height: 54px
+	height: 50px
 	background: transparent
 	color: #000
-	font-size: 15px
+	font-size: 20px
 
 	&::placeholder
-		color: #595959
+		color: #000000
 
 	&:hover, &:focus
 		outline: none
@@ -92,15 +92,12 @@ input, textarea, select
 label
 	display: block
 	width: 100%
-	margin: 0 0 13px
-
-	&:last-child
-		margin: 0
+	margin: 0 0 23px
 
 textarea
 	resize: none
-	padding: 12px 17px
-	height: 103px
+	padding: 10px 21px
+	height: 121px
 
 button, .btn
 	outline: none
@@ -192,6 +189,18 @@ h2
 	> *
 		padding: 0 15px
 
+.mb-30
+	margin-bottom: 30px
+
+.bg-red
+	background: $accent
+
+.bg-green
+	background: $green
+
+.bg-blue
+	background: $hover
+
 // slick	
 .slick-slider
 	width: 100%
@@ -243,7 +252,7 @@ h2
 	&:hover
 		background: $accent
 	&.slick-disabled
-		opacity: 0		
+		opacity: 0
 
 .slick-prev
 	left: -45px
@@ -276,30 +285,25 @@ h2
 		button
 			display: none
 
-//checkbox my
-// .label-checkbox
-//   position: relative
-//   display: flex
-//   align-items: flex-start
-//   color: rgba(255, 255, 255, 0.5)
-//   font-size: 14px
-//   margin: 15px 0 0
-//   line-height: 1.14
-
-// .inp-check
-//   display: none
-
-// .checkbox-custom
-//   margin: 0 12px 0 0
-//   position: relative
-//   border-radius: 6px
-//   background-color: #fff
-//   width: 16px
-//   height: 16px
-//   min-width: 16px
-//   cursor: pointer
-
-// .inp-check:checked ~ .checkbox-custom
-//   background: #fff url("../img/check-black.svg") no-repeat center
-//   background-size: 8px
-//checkbox my end
+.label-radio
+	position: relative
+	width: 38px
+	height: 38px
+	border-radius: 50%
+	cursor: pointer
+	&__color
+		width: 100%
+		height: 100%
+		border-radius: 50%
+		display: block
+	input
+		position: absolute
+		background: transparent
+		width: 100%
+		height: 100%
+		padding: 0
+		border-radius: 50%
+		cursor: pointer
+		border: 2px solid transparent
+		&:checked
+			border-color: #000

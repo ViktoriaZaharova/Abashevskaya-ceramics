@@ -37,6 +37,15 @@ $('.artists-gallery-slider').slick({
 	rtl: true,
 	autoplay: true,
 	autoplaySpeed: 2000,
+	responsive: [
+		{
+			breakpoint: 576,
+			settings: {
+				slidesToShow: 1,
+				variableWidth: false,
+			}
+		}
+	]
 });
 
 $('.author-slider').slick({
@@ -45,7 +54,16 @@ $('.author-slider').slick({
 	variableWidth: true,
 	prevArrow: '<button type="button" class="slick-prev"><svg class="svg-icon"><use xlink:href="img/sprite.svg#prev"></use></svg></button>',
 	nextArrow: '<button type="button" class="slick-next"><svg class="svg-icon"><use xlink:href="img/sprite.svg#next"></use></svg></button>',
-	appendArrows: '.author-slider__nav'
+	appendArrows: '.author-slider__nav',
+	responsive: [
+		{
+			breakpoint: 576,
+			settings: {
+				slidesToShow: 1,
+				variableWidth: false,
+			}
+		}
+	]
 });
 
 $('.product-card__image').slick({
@@ -63,6 +81,26 @@ $('.news-slider').slick({
 	infinite: false,
 	prevArrow: '<button type="button" class="slick-prev"><svg class="svg-icon"><use xlink:href="img/sprite.svg#prev"></use></svg></button>',
 	nextArrow: '<button type="button" class="slick-next"><svg class="svg-icon"><use xlink:href="img/sprite.svg#next"></use></svg></button>',
+	responsive: [
+		{
+			breakpoint: 1200,
+			settings: {
+				slidesToShow: 3,
+			}
+		},
+		{
+			breakpoint: 768,
+			settings: {
+				slidesToShow: 2,
+			}
+		},
+		{
+			breakpoint: 576,
+			settings: {
+				slidesToShow: 1,
+			}
+		}
+	]
 });
 
 // load more
@@ -75,4 +113,13 @@ $('.btn-toggle').on('click', function (e) {
 	if (onBlock <= 0) {
 		$(this).hide();
 	}
+});
+
+// mobile menu
+$('.btn-burger').click(function () {
+	$('.nav-menu').fadeToggle();
+});
+
+$('.nav-menu__close').click(function () {
+	$('.nav-menu').fadeOut();
 });

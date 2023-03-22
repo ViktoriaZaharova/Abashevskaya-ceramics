@@ -91,32 +91,32 @@ input, textarea, select {
   -webkit-appearance: none;
      -moz-appearance: none;
           appearance: none;
-  padding: 0 15px;
+  padding: 0 21px;
   -webkit-box-sizing: border-box;
           box-sizing: border-box;
   font-family: "Nunito", sans-serif;
-  border: none;
-  border-radius: 10px;
+  border: 1px solid #DD2A1B;
+  border-radius: 25px;
   width: 100%;
-  height: 54px;
+  height: 50px;
   background: transparent;
   color: #000;
-  font-size: 15px;
+  font-size: 20px;
 }
 input::-webkit-input-placeholder, textarea::-webkit-input-placeholder, select::-webkit-input-placeholder {
-  color: #595959;
+  color: #000000;
 }
 input::-moz-placeholder, textarea::-moz-placeholder, select::-moz-placeholder {
-  color: #595959;
+  color: #000000;
 }
 input:-ms-input-placeholder, textarea:-ms-input-placeholder, select:-ms-input-placeholder {
-  color: #595959;
+  color: #000000;
 }
 input::-ms-input-placeholder, textarea::-ms-input-placeholder, select::-ms-input-placeholder {
-  color: #595959;
+  color: #000000;
 }
 input::placeholder, textarea::placeholder, select::placeholder {
-  color: #595959;
+  color: #000000;
 }
 input:hover, input:focus, textarea:hover, textarea:focus, select:hover, select:focus {
   outline: none;
@@ -127,16 +127,13 @@ input:hover, input:focus, textarea:hover, textarea:focus, select:hover, select:f
 label {
   display: block;
   width: 100%;
-  margin: 0 0 13px;
-}
-label:last-child {
-  margin: 0;
+  margin: 0 0 23px;
 }
 
 textarea {
   resize: none;
-  padding: 12px 17px;
-  height: 103px;
+  padding: 10px 21px;
+  height: 121px;
 }
 
 button, .btn {
@@ -255,6 +252,22 @@ h2 {
 }
 .row > * {
   padding: 0 15px;
+}
+
+.mb-30 {
+  margin-bottom: 30px;
+}
+
+.bg-red {
+  background: #DD2A1B;
+}
+
+.bg-green {
+  background: #00A658;
+}
+
+.bg-blue {
+  background: #0368B0;
 }
 
 .slick-slider {
@@ -378,4 +391,31 @@ h2 {
 }
 .slick-dots li button {
   display: none;
+}
+
+.label-radio {
+  position: relative;
+  width: 38px;
+  height: 38px;
+  border-radius: 50%;
+  cursor: pointer;
+}
+.label-radio__color {
+  width: 100%;
+  height: 100%;
+  border-radius: 50%;
+  display: block;
+}
+.label-radio input {
+  position: absolute;
+  background: transparent;
+  width: 100%;
+  height: 100%;
+  padding: 0;
+  border-radius: 50%;
+  cursor: pointer;
+  border: 2px solid transparent;
+}
+.label-radio input:checked {
+  border-color: #000;
 }

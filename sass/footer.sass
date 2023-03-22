@@ -1,2 +1,264 @@
 @import "vars"
 
+// footer
+footer
+	margin: 110px 0 102px
+	.logo
+		margin: -30px 0 0
+
+.map
+	width: 100%
+	height: 186px
+	iframe
+		width: 100%
+		height: 100%
+
+.footer-col
+	padding: 0 54px 0 0
+	margin: 0 47px 0 0
+	position: relative
+	z-index: 1
+	display: flex
+	flex-direction: column
+	&::before
+		content: ''
+		position: absolute
+		bottom: 0
+		right: 0
+		width: 1px
+		height: 186px
+		background: $accent
+	&:last-child
+		margin: 0
+		padding: 0
+		&::before
+			display: none
+
+.link-developer
+	color: $accent
+	margin: auto 0 0
+	font-size: 12px
+	img
+		max-width: 69px
+	span
+		display: block
+		margin: 0 0 7px
+
+.footer-menu
+	font-size: 16px
+	column-count: 2
+	li
+		margin: 0 0 16px
+		&:last-child
+			margin: 0
+		a
+			color: #000000
+			&:hover
+				color: $accent
+
+.contacts-box
+	margin: auto 0 0
+	font-size: 24px
+	a
+		color: #000
+		margin: 0 0 8px
+		&:last-child
+			margin: 0
+		&:hover
+			color: $accent
+	p
+		margin: 0 0 8px
+		&:last-child
+			margin: 0
+// footer end
+
+// modal	
+.modal-dialog
+	max-width: 1123px
+
+.modal-content
+	background: #fff
+	box-shadow: 0px 15px 35px rgba(0, 0, 0, 0.05)
+	border: none
+	border-radius: 25px
+	padding: 72px 58px 56px
+	.btn-close
+		margin: 0
+		position: absolute
+		z-index: 1
+		opacity: 1
+		top: 19px
+		right: 19px
+		@include d-flex
+		fill: #DD2A1B
+		background: transparent
+		padding: 0
+		width: 33px
+		height: 33px
+		&:hover
+			fill: $hover
+
+.modal-header
+	position: initial
+	border: none
+	border-radius: 0
+	padding: 0
+	flex-wrap: wrap
+	margin: 0 0 47px
+	
+
+.modal-title
+	text-align: center
+	width: 100%
+	font-size: 48px
+	font-weight: bold
+	text-transform: uppercase
+	color: $accent
+
+.modal-body
+	padding: 0
+	width: 100%
+	.form
+		margin: 55px 0 0
+		[type="submit"]
+			padding: 12px 73px
+
+.consent
+	color: #666666
+	font-size: 10px
+	margin: 13px 0 0
+	max-width: 182px			
+
+.masters-card-modal
+	width: 100%
+	display: flex
+	align-items: flex-start
+	flex-wrap: wrap
+	.masters-card__photo
+		width: 288px
+	.masters-card__body
+		width: calc(100% - 288px)
+		padding: 0 0 0 70px
+	h3
+		color: #000000
+		max-width: 310px		
+		margin: 0 26px 0 0
+
+.value-people
+	h4
+		margin: 0 0 18px
+		font-weight: bold
+		font-size: 24px		
+
+.amount
+	display: flex
+	align-items: center
+	max-width: 109px
+	width: 100%
+	input
+		padding: 0
+		border: none
+		border-radius: 0
+		text-align: center
+		height: 31px
+		width: 47px
+		font-weight: bold
+		font-size: 20px
+		color: #000000
+	span
+		width: 31px
+		height: 31px
+		min-width: 31px
+		@include d-flex
+		border: 1px solid #666666
+		border-radius: 50%
+		font-size: 20px
+		font-weight: bold
+		color: #666666
+		transition: .3s ease
+		cursor: pointer
+		&:hover
+			background: $accent
+			color: #fff
+			border-color: $accent
+
+.new-modal
+	line-height: 22px
+	img
+		margin: 0 47px 46px 0
+		float: left
+	h4
+		text-transform: uppercase
+		margin: 0 0 23px
+		color: #DD2A1B
+		font-size: 24px
+		font-weight: bold
+		line-height: 30px
+	p
+		margin: 0 0 30px
+		&:last-child
+			margin: 0	
+
+#thanksModal
+	h3
+		text-align: center
+		font-weight: bold
+		margin: 0 auto 73px
+		font-size: 48px
+		font-weight: bold	
+		max-width: 852px
+	.btn
+		padding: 20px 60px
+		margin: 0 auto
+
+#orderModal
+	.form
+		margin: 0
+		button
+			width: 100%
+			padding: 12px 
+		.consent
+			text-align: center
+			margin: 12px auto 0					
+
+.product-colors
+	display: flex
+	flex-wrap: wrap
+	align-items: center		
+	font-size: 20px
+	margin: 38px 0 44px
+	width: 100%
+
+.list-colors
+	display: flex
+	align-items: flex-start
+	flex-wrap: wrap
+	label
+		margin: 0 0 0 38px
+
+.product-modal-info
+	width: 100%
+	display: flex
+	align-items: center
+	flex-wrap: wrap
+	font-size: 20px
+	.size
+		color: #666666
+	.price
+		font-weight: bold
+		font-size: 24px	
+	h3
+		font-weight: bold
+		font-size: 24px
+		text-align: left
+		margin: 0		
+	&__box
+		flex: 1
+		border-left: 1px solid #666666
+		text-align: center
+		&:first-child
+			border: none
+	.amount
+		margin: 0 auto		
+
+// modal end	
